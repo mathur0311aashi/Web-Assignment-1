@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4e73df, #1cc88a);
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #4e73df;
+}
+
+.event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.event-form input,
+.event-form select,
+.event-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.event-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.event-form button[type="submit"] {
+    background-color: #4e73df;
+    color: white;
+}
+
+#sampleBtn {
+    background-color: #1cc88a;
+    color: white;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-item {
+    background: #f8f9fc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.event-item:hover {
+    transform: scale(1.02);
+}
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.badges {
+    margin: 5px 0;
+}
+
+.badge-date {
+    background: #36b9cc;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.badge-cat {
+    background: #f6c23e;
+    color: black;
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.empty {
+    text-align: center;
+    color: gray;
+}

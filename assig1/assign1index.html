@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./spreadsheetass1.css"></link>
+</head>
+<body>
+     <h1 class="title">🎯 Smart Event Dashboard</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Add New Event</h2>
+
+      <input type="text" id="title" placeholder="Event Title">
+      <input type="date" id="date">
+
+      <select id="category">
+        <option>Conference</option>
+        <option>Meeting</option>
+        <option>Workshop</option>
+        <option>Social</option>
+      </select>
+
+      <textarea id="description" placeholder="Description"></textarea>
+
+      <button id="addBtn">Add Event</button>
+    </div>
+
+    <div class="card">
+      <h2>My Events</h2>
+
+      <div class="btn-group">
+        <button id="clearBtn">Clear All Events</button>
+        <button id="sampleBtn">Add Sample Events</button>
+      </div>
+
+      <div id="eventList"></div>
+    </div>
+
+  </div>
+
+  <div class="demo">
+    <h2>DOM Manipulation Demo</h2>
+
+    <p id="demoText"><strong>Bold Text</strong> with spaces</p>
+
+    <div class="btn-group">
+      <button id="htmlBtn">innerHTML</button>
+      <button id="textBtn">textContent</button>
+      <button id="boldBtn">Toggle Bold</button>
+    </div>
+  </div>
+    <script src = "./assign1.js"></script>
+ 
+</body>
+</html>

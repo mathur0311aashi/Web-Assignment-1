@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style src = "./spreadsheetass1.css"></style>
+</head>
+<body>
+    <div class="dashboard"></div>
+        <h1>Smart Event Dashboard</h1>
+
+        <h2>Add New Event </h2>
+
+        <form id="eventForm" class = "event-form">
+            <input type="text" id="title" placeholder="Event Title" required>
+            <input type="date" id="date" required>
+
+            <select id = "category">
+                <option value="workshop">workshop</option>
+                <option value="seminar">seminar</option>
+                <option value="conference">conference</option>
+            </select>
+
+            <textarea id="description" placeholder="Event Description"></textarea>
+            <button type="submmit">Add Event</button>
+            <button type="button" onclick="addEvent()">Add event</button>
+        </form>
+
+        <ul id = "eventList" class = "event-list"></ul>
+    </div>
+
+        <label for=""></label>
+    <div id="btn">Clicl Me</div>
+    <div id="content"></div>
+    <div id ="eventContainer">
+        <div class="empty-space">No events added .add your first event!</div>
+    <h2>DEOM MENIPULATION DEMO</h2>
+    </div>
+    <div id = "demoContent">
+        Press any key to see the result
+    </div>
+    <script src="./ass1.js"></script>
+   
+</body>
+</html>
